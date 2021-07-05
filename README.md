@@ -7,7 +7,7 @@ A collection of small components that make every day life in TouchDesigner sligh
 
 ## colorCurves
 
-colorCurves graphically adjusts per-channel color levels of a TOP using a plotted curve, similar to many image and video editing applications.
+colorCurves graphically adjusts per-channel color levels of a TOP using a plotted curve, similar to many image and video editing applications. Credit goes to [Vasily](https://derivative.ca/community-post/asset/color-curves) for authoring the original version of this component, to which I built onto.
 
 ![colorCurves Screenshot](/img/colorCurvesScreenshot.png)
 
@@ -35,7 +35,7 @@ Default interpolation between points is `Linear`. You can select between `Step`,
 In addition to interpolation, your curve can be smoothed out by increasing the `Smooth` par slider. By default it is set to `0.0` (no interpolation). This can be used in combination with any interpolation mode.
 
 #### Preview / Levels
-By default the Preview of your TOP is shown. If you toggle the `Preview` button, it will switch to a Levels display of your current channel, which shows the total amount of values (y axis) in your adjusted TOP, drawn from dark to bright values (x-axis).
+By default a Preview of your TOP is shown. If you toggle the `Preview` button, it will switch to a Levels display of your current channel, which shows the total amount of values (y axis) in your adjusted TOP, drawn from dark to bright values (x-axis).
 
 #### Single / Split Views
 By default a single view of the edited image is shown. To compare against the original, toggle the `Single View` button to the `Split View` mode, which draws a vertical bar in the curve editor that slides from left to right. The original TOP image is on the left, and the edited TOP is on the right.
@@ -49,7 +49,7 @@ Finally, the `Reset` button will reset the current channel being edited.
 
 ## Keyframer
 
-Keyframer plays back animations similar to an Animation COMP setup, but with more advanced cueing, playback and COMP integration features.
+Keyframer plays animations similar to an Animation COMP setup, but with more advanced cueing, playback and COMP integration features.
 
 ### Pars
 
