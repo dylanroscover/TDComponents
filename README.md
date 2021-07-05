@@ -5,7 +5,7 @@ A collection of small components that make every day life in TouchDesigner sligh
 ---
 
 
-## :artist: colorCurves
+## :artist: colorCurves.tox
 
 colorCurves graphically adjusts per-channel color levels of a TOP using a plotted curve, similar to many image and video editing applications. Credit goes to [Vasily](https://derivative.ca/community-post/asset/color-curves) for authoring the original version of this component, to which I built onto.
 
@@ -47,7 +47,7 @@ Finally, the `Reset` button will reset the current channel being edited.
 
 ---
 
-## :old_key: Keyframer
+## :old_key: Keyframer.tox
 
 Keyframer plays animations similar to an Animation COMP setup, but with more advanced cueing, playback and COMP integration features.
 
@@ -117,7 +117,7 @@ Keyframer plays animations similar to an Animation COMP setup, but with more adv
 
 ---
 
-## :man_cook: Lagger
+## :man_cook: Lagger.tox
 
 Lagger dynamically disables cooking on Filter/Lag CHOPs while they are not changing values, saving you precious cook time.
 
@@ -138,7 +138,7 @@ Lagger dynamically disables cooking on Filter/Lag CHOPs while they are not chang
 
 ---
 
-## :play_or_pause_button: Playback
+## :play_or_pause_button: Playback.tox
 
 Playback plays, scrubs, loops and fades movies in/out in a simple geometryCOMP setup.
 
