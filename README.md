@@ -126,6 +126,8 @@ Keyframer plays animations similar to an Animation COMP setup, but with more adv
 
 Lagger dynamically disables cooking on Filter/Lag CHOPs while they are not changing values, saving you precious cook time.
 
+![Lagger](/img/Lagger.gif)
+
 ### Pars
 
 * `Input Value` - Sets the value to be smoothed via the Lag or Filter CHOP. A CHOP can also be wired via the component's In CHOP as the input.
