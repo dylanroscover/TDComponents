@@ -166,6 +166,8 @@ Playback plays, scrubs, loops and fades movies in/out in a simple geometryCOMP s
 
 Timecode renders a TOP output of timecode (HH:MM:SS:FF) using 2D texture slicing instead of the Text TOP. This generally cooks about twice as fast as an equivalent Text TOP. It can be configured with a custom font, generate timecode from an internal timer setup, or receive a single row/column table DAT input.
 
+![Timecode](/img/Timecode.png)
+
 ### Pars
 
 #### Internal Timer
