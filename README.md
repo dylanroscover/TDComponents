@@ -6,6 +6,7 @@ A collection of small components that make every day life in TouchDesigner sligh
 - [Keyframer.tox](#old_key-keyframertox)
 - [Lagger.tox](#man_cook-laggertox)
 - [Playback.tox](#play_or_pause_button-playbacktox)
+- [Timecode.tox](#:stopwatch:-timecodetox)
 
 ---
 
@@ -158,3 +159,48 @@ Playback plays, scrubs, loops and fades movies in/out in a simple geometryCOMP s
 * `Scrub` - Scrubs the video file from start to finish. 0.0 is the first frame of the file, 1.0 is the last frame. Can be scrubbed at anytime. Setting to 0.0 is the equivalent of cueing the video.
 * `Progress` - The current frame of the video being displayed (normalized fraction, same as `Scrub`).
 * `Size` - The width and height of the rectangleSOP in which the video is displayed. This can be pixel values, or fractional values, depending on your scene setup and scale.
+
+---
+
+## :stopwatch: Timecode.tox
+
+Timecode renders a TOP output of timecode (HH:MM:SS:FF) using 2D texture slicing instead of the Text TOP. This generally cooks about twice as fast as an equivalent Text TOP. It can be configured with a custom font, generate timecode from an internal timer setup, or receive a single row/column table DAT input.
+
+### Pars
+
+#### Internal Timer
+
+* `Active` - Enables/disables the internal Timer CHOP. Will auto-disable on a timer cycle if an external input is connected to the Timecode COMP input.
+* `Init` - Initializes the internal Timer CHOP.
+* `Start` - Starts the internal Timer CHOP.
+* `Play` - Plays/pauses the internal Timer CHOP.
+* `Cue` - Cues the internal Timer CHOP.
+* `Length` - Updates the length of the internal Timer CHOP, in seconds. Note that setting this parameter will automatically re-initialize the internal Timer CHOP in order to take effect.
+* `Speed` - Sets the playback speed of the internal Timer CHOP. A speed of 0.5 will play a 30 second `Length` over a 60 second timespan, and a speed of 2 will play a 10 second `Length` in 5 seconds.
+* `Cycle` - Enables/disables whether the internal Timer CHOP loops (cycles) or not. Note that setting this parameter will automatically re-initialize the internal Timer CHOP in order to take effect.
+
+#### Settings
+
+* `Resolution (w/h)` `[0]` - Sets the width and height resolutions of the TOP output, in pixels. This component is designed for an aspect ratio between 4 and 6 (4-6 times as wide as it is high); any aspect ratio can be used, however certain layout considerations/restrictions may apply outside of this range.
+
+* `Aspect Ratio (Read only)` - Displays the aspect ratio (AR) of the set `Resolution`. Useful for determining an appropriate resolution, see previous bullet point for more info.
+
+* `Number Offset (4x floats)` - The horizontal position of each number group (hours, minutes, seconds, frames). These are loaded as expressions by default, automatically adapting based on the resolution and aspect ratio, but can be further customized here if desired.
+
+* `Spacer Offset (3x floats)` - The horizontal position of each spacer (colon, or ':'), a separator between each number group. These are loaded as expressions by default, automatically adapting based on the resolution and aspect ratio, but can be further customized here if desired.
+
+* `Font` `[0]` - Sets the system font to be used for numbers and spacers (:).
+
+* `Custom Font` `[0]` - Sets a custom font file (ttf/otf) to be used for numbers and spacers (:).
+
+* `Number Size` `[0]` - Sets the vertical size, in pixels, of the number font.
+
+* `Spacer Size` - Sets the vertical size, in pixels, of the spacer (:) font.
+
+* `Number Color` `[0]` - Sets the RGBA values (0-1) of the number font.
+
+* `Spacer Color` - Sets the RGBA values (0-1) of the spacer (:) font.
+
+* `Update Attributes` `[0]`- Updates all 2D texture slices of the numbers. Will automatically run after most parameter changes, including resolution, number size, font, and color changes. While running, all parameters are set to read only to prevent update errors. Updating the entire timecode normally takes less than 6 seconds. During this time the project is placed into non-realtime mode, and each number is given 4 frames to cook, which is typically adequate time. If it is not, or any errors/missing frames occur, try running it manually again by pulsing this parameter.
+
+`[0]` Updating/running this parameter will make all Timecode COMP parameters read-only during the update process, to prevent accidental glitches (an update process must finish cleanly before re-updating). The update process generally takes less than 6 seconds to complete.
