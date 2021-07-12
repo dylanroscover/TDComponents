@@ -6,7 +6,7 @@ A collection of small components that make every day life in TouchDesigner sligh
 - [Keyframer.tox](#old_key-keyframertox)
 - [Lagger.tox](#man_cook-laggertox)
 - [Playback.tox](#play_or_pause_button-playbacktox)
-- [Timecode.tox](#:stopwatch:-timecodetox)
+- [Timecode.tox](#stopwatch-timecodetox)
 
 ---
 
