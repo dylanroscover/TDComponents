@@ -2,11 +2,11 @@
 
 A collection of small components that make everyday life in TouchDesigner slightly more bearable.
 
-- [colorCurves.tox](#artist-colorcurves) [v2.3.1](colorCurves.tox)
-- [Keyframer.tox](#old_key-keyframer) [v0.2.3](Keyframer.tox)
-- [Optimeister.tox](#man_cook-optimeister) [v0.5.0](Optimeister.tox)
-- [Playback.tox](#play_or_pause_button-playback) [v0.1.3](Playback.tox)
-- [Timecode.tox](#stopwatch-timecode) [v0.1.1](Timecode.tox)
+- [colorCurves.tox](#artist-colorcurves) - Download [v2.3.1](colorCurves.tox)
+- [Keyframer.tox](#old_key-keyframer) - Download [v0.2.3](Keyframer.tox)
+- [Optimeister.tox](#man_cook-optimeister) - Download [v0.5.0](Optimeister.tox)
+- [Playback.tox](#play_or_pause_button-playback) - Download [v0.1.3](Playback.tox)
+- [Timecode.tox](#stopwatch-timecode) - Download [v0.1.1](Timecode.tox)
 
 ---
 
@@ -15,7 +15,7 @@ A collection of small components that make everyday life in TouchDesigner slight
 
 colorCurves graphically adjusts per-channel color levels of a TOP using a plotted curve, similar to many image and video editing applications. Credit goes to [Vasily](https://derivative.ca/community-post/asset/color-curves) for authoring the original version of this component, to which I built onto.
 
-![colorCurves Screenshot](/img/colorCurvesScreenshot.png | width=300)
+![colorCurves Screenshot](/img/colorCurvesScreenshot.png){:width=50%}
 
 ### Input
 Any TOP can be fed into the component's input. Default is the TD Banana.
@@ -57,7 +57,7 @@ Finally, the `Reset` button will reset the current channel being edited.
 
 Keyframer plays animations similar to an Animation COMP setup, but with more advanced cueing, playback and COMP integration features.
 
-### Pars
+### Parameters
 
 #### General
 
@@ -130,7 +130,7 @@ Optimeister cooks common CHOP outputs only when their data changes. This conside
 It accepts channel inputs via custom parameters or a single wire in, which can be multi-channel, allows for renaming of outputs, and the full customization of parameters bound to the CHOP operation specified (Delay/Filter/Lag/etc.).
 
 
-### Pars
+### Parameters
 
 #### Input
 
@@ -167,7 +167,7 @@ It accepts channel inputs via custom parameters or a single wire in, which can b
 
 Playback plays, scrubs, loops and fades movies in/out in a simple geometryCOMP setup.
 
-### Pars
+### Parameters
 
 * `Active` - Fades the movie material alpha on/off.
 * `Video File` - The video file that is played back.
@@ -185,7 +185,7 @@ Timecode renders a TOP output of timecode (HH:MM:SS:FF) using 2D texture slicing
 
 ![Timecode](/img/Timecode.gif)
 
-### Pars
+### Parameters
 
 #### Internal Timer
 
