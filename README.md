@@ -15,7 +15,7 @@ A collection of small components that make everyday life in TouchDesigner slight
 
 colorCurves graphically adjusts per-channel color levels of a TOP using a plotted curve, similar to many image and video editing applications. Credit goes to [Vasily](https://derivative.ca/community-post/asset/color-curves) for authoring the original version of this component, to which I built onto.
 
-<img src='https://raw.githubusercontent.com/dylanroscover/TDComponents/main/img/colorCurvesScreenshot.png' width='200'>
+<img src='https://raw.githubusercontent.com/dylanroscover/TDComponents/main/img/colorCurvesScreenshot.png' width='500'>
 
 ### Input
 Any TOP can be fed into the component's input. Default is the TD Banana.
