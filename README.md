@@ -1,21 +1,21 @@
 # TDComponents
 
-A collection of small components that make every day life in TouchDesigner slightly more bearable.
+A collection of small components that make everyday life in TouchDesigner slightly more bearable.
 
-- [colorCurves.tox](#artist-colorcurvestox)
-- [Keyframer.tox](#old_key-keyframertox)
-- [Lagger.tox](#man_cook-laggertox)
-- [Playback.tox](#play_or_pause_button-playbacktox)
-- [Timecode.tox](#stopwatch-timecodetox)
+- [colorCurves.tox](#artist-colorcurves) [v2.3.1](colorCurves.tox)
+- [Keyframer.tox](#old_key-keyframer) [v0.2.3](Keyframer.tox)
+- [Optimeister.tox](#man_cook-optimeister) [v0.5.0](Optimeister.tox)
+- [Playback.tox](#play_or_pause_button-playback) [v0.1.3](Playback.tox)
+- [Timecode.tox](#stopwatch-timecode) [v0.1.1](Timecode.tox)
 
 ---
 
 
-## :artist: colorCurves.tox
+## :artist: colorCurves
 
 colorCurves graphically adjusts per-channel color levels of a TOP using a plotted curve, similar to many image and video editing applications. Credit goes to [Vasily](https://derivative.ca/community-post/asset/color-curves) for authoring the original version of this component, to which I built onto.
 
-![colorCurves Screenshot](/img/colorCurvesScreenshot.png)
+![colorCurves Screenshot](/img/colorCurvesScreenshot.png | width=300)
 
 ### Input
 Any TOP can be fed into the component's input. Default is the TD Banana.
@@ -53,7 +53,7 @@ Finally, the `Reset` button will reset the current channel being edited.
 
 ---
 
-## :old_key: Keyframer.tox
+## :old_key: Keyframer
 
 Keyframer plays animations similar to an Animation COMP setup, but with more advanced cueing, playback and COMP integration features.
 
@@ -123,30 +123,47 @@ Keyframer plays animations similar to an Animation COMP setup, but with more adv
 
 ---
 
-## :man_cook: Lagger.tox
+## :man_cook: Optimeister
 
-Lagger dynamically disables cooking on Filter/Lag CHOPs while they are not changing values, saving you precious cook time.
+Optimeister cooks common CHOP outputs only when their data changes. This considerably improves performance of complex networks with many downstream CHOPs following ones that typically always cook. Supported CHOPs include: Delay, Filter, Lag, Logic, Timer, Trigger, Speed, and Slope.
 
-![Lagger](/img/Lagger.gif)
+It accepts channel inputs via custom parameters or a single wire in, which can be multi-channel, allows for renaming of outputs, and the full customization of parameters bound to the CHOP operation specified (Delay/Filter/Lag/etc.).
+
 
 ### Pars
 
-* `Input Value` - Sets the value to be smoothed via the Lag or Filter CHOP. A CHOP can also be wired via the component's In CHOP as the input.
+#### Input
 
-* `Chan Name` - The name of the output CHOP channel. Useful if the channel needs to be renamed from the input.
+* `Use Wired Input` - Used to disable the use of the wired input instead of the Input parameters (Input0, Input1, etc.). Will automatically set itself when a wired input is connected, and vice-versa will disable itself when disconnected.
 
-* `Lag or Filter` - Switches between either the Lag CHOP or Filter CHOP as the method of channel handling.
+* `Num Inputs` - The total number of input channels. Can be set manually when Use Wired Input is disabled. Otherwise, it is set to Read Only and automatically updated to the number of input channels detected when wired input is used.
 
-* `Lag (s)` - The lag in/out times, in seconds, as corresponds to the Lag CHOP.
+* `Input * Value` - Each input channel as a parameter. Can be referenced with `op('Optimeister').par.Input0`, etc. Set to Read Only when Use Wired Input is enabled to prevent data stream doubling. Supports expression and bind modes that reference external sources. Note that expression and bind modes will be disabled (reset to constant mode) when a wired input is detected.
 
-* `Filter Width` - The filter width, in seconds, as corresponds to the Filter CHOP.
+#### Output
 
-* `Filter Type` - The type of filter to be used; default is Gaussian.
+* `Use Input Channel Names` - When enabled all Output Channels will default to the input channel names if using wired inputs. If using custom parameters on the Input page, they will be Input0, Input1, Input2, etc. When disabled, the Output Channel Names parameters will become editable (instead of Read Only) and override the existing output values when changed. If this parameter is toggled, any edits made are retained in Python storage, so any custom channel names are not immediately lost.
+
+* `Output Channel *` - The name of each output channel as a parameter, editable or Read Only depending on whether the Use Input Channel Names parameter is enabled or not.
+
+#### General
+
+* `Reinit` - Reinitializes the component, a sort of reset button.
+
+* `Version` - Current version of the component, which can be compared with this repo to confirm the latest version.
+
+* `Help` - Opens this webpage in a browser for the very section you're reading right now... help! #meta
+
+* `Update` - Opens the latest tox component for download.
+
+#### Operation
+
+* `Operation Type` - The type of CHOP that input data runs through; the intermediary of Optimeister. Supported Operators include: Delay, Filter, Lag, Logic, Timer, Trigger, Speed, and Slope. All parameters of the selected Operation Type are automatically added below this parameter and bound to the intermediary CHOP. This allows for easy external adjustments of settings without diving into the Optimeister base component (useful, for example, if Optimeister operates in a clone setup within a project.)
 
 
 ---
 
-## :play_or_pause_button: Playback.tox
+## :play_or_pause_button: Playback
 
 Playback plays, scrubs, loops and fades movies in/out in a simple geometryCOMP setup.
 
@@ -162,7 +179,7 @@ Playback plays, scrubs, loops and fades movies in/out in a simple geometryCOMP s
 
 ---
 
-## :stopwatch: Timecode.tox
+## :stopwatch: Timecode
 
 Timecode renders a TOP output of timecode (HH:MM:SS:FF) using 2D texture slicing instead of the Text TOP. This generally cooks about twice as fast as an equivalent Text TOP. It can be configured with a custom font, generate timecode from an internal timer setup, or receive a single row/column table DAT input.
 
