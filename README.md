@@ -1,6 +1,7 @@
-# TDComponents
+# :tophat: TDComponents
 
-A collection of small components that make everyday life in TouchDesigner slightly more bearable.
+### A collection of small components that make everyday life in TouchDesigner slightly more bearable.
+#### :floppy_disk: TouchDesigner 2022.25370 (Windows)
 
 - [colorCurves.tox](#artist-colorcurves) - Download [v2.3.2](release/colorCurves.tox)
 - [Keyframer.tox](#old_key-keyframer) - Download [v0.2.3](release/Keyframer.tox)
