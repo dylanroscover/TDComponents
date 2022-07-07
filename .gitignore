@@ -1,0 +1,18 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+# Directories to ignore
+log/*.*
+dev/Backup/
+#*.*.toe
+
+# Files to ignore
+CrashAutoSave.toe
+*.dmp
