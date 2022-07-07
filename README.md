@@ -2,11 +2,11 @@
 
 A collection of small components that make everyday life in TouchDesigner slightly more bearable.
 
-- [colorCurves.tox](#artist-colorcurves) - Download [v2.3.1](colorCurves.tox)
-- [Keyframer.tox](#old_key-keyframer) - Download [v0.2.3](Keyframer.tox)
-- [Optimeister.tox](#man_cook-optimeister) - Download [v0.5.0](Optimeister.tox)
-- [Playback.tox](#play_or_pause_button-playback) - Download [v0.1.3](Playback.tox)
-- [Timecode.tox](#stopwatch-timecode) - Download [v0.1.1](Timecode.tox)
+- [colorCurves.tox](#artist-colorcurves) - Download [v2.3.2](release/colorCurves.tox)
+- [Keyframer.tox](#old_key-keyframer) - Download [v0.2.3](release/Keyframer.tox)
+- [Optimeister.tox](#man_cook-optimeister) - Download [v0.6.0](release/Optimeister.tox)
+- [Playback.tox](#play_or_pause_button-playback) - Download [v0.2.0](release/Playback.tox)
+- [Timecode.tox](#stopwatch-timecode) - Download [v0.1.3](release/Timecode.tox)
 
 ---
 
@@ -132,6 +132,18 @@ It accepts channel inputs via custom parameters or a single wire in, which can b
 
 ### Parameters
 
+#### General
+
+* `Reinit` - Reinitializes the component, a sort of reset button.
+
+* `Selectively Uncook Operation` - Bypass the main operation node (usually Filter or Lag CHOP) while it is not actively tweening data. Can greatly improve performance in environments with many instances of Optimeister. Note that this may not always function as intended, and should be disabled if any oddities with output data are observed.
+
+* `Version` - Current version of the component, which can be compared with this repo to confirm the latest version.
+
+* `Help` - Opens this webpage in a browser for the very section you're reading right now... help! #meta
+
+* `GitHub` - Opens the main GitHub repo for downloading any updates to Optimeister.
+
 #### Input
 
 * `Use Wired Input` - Used to disable the use of the wired input instead of the Input parameters (Input0, Input1, etc.). Will automatically set itself when a wired input is connected, and vice-versa will disable itself when disconnected.
@@ -146,15 +158,6 @@ It accepts channel inputs via custom parameters or a single wire in, which can b
 
 * `Output Channel *` - The name of each output channel as a parameter, editable or Read Only depending on whether the Use Input Channel Names parameter is enabled or not.
 
-#### General
-
-* `Reinit` - Reinitializes the component, a sort of reset button.
-
-* `Version` - Current version of the component, which can be compared with this repo to confirm the latest version.
-
-* `Help` - Opens this webpage in a browser for the very section you're reading right now... help! #meta
-
-* `Update` - Opens the latest tox component for download.
 
 #### Operation
 
