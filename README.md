@@ -1,18 +1,17 @@
 # :tophat: TDComponents
 
 ### A collection of small components that make everyday life in TouchDesigner slightly more bearable.
-#### :floppy_disk: TouchDesigner 2022.25370 (Windows)
+#### :floppy_disk: TouchDesigner 2022.31030 (Windows)
 
-- [colorCurves.tox](#artist-colorcurves) - Download [v2.3.2](release/colorCurves.tox)
-- [Keyframer.tox](#old_key-keyframer) - Download [v0.2.3](release/Keyframer.tox)
-- [Optimeister.tox](#man_cook-optimeister) - Download [v0.6.0](release/Optimeister.tox)
-- [Playback.tox](#play_or_pause_button-playback) - Download [v0.2.0](release/Playback.tox)
-- [Timecode.tox](#stopwatch-timecode) - Download [v0.1.3](release/Timecode.tox)
+- [colorCurves.tox](#colorcurves) - Download [v2.3.2](release/colorCurves-v2.3.2.tox)
+- [Optimeister.tox](#Optimeister) - Download [v0.6.35](release/Optimeister-v0.6.35.tox)
+- [Timecode.tox](#timecode) - Download [v0.1.3](release/Timecode-v0.1.3.tox)
+- [Playback.tox](#Playback) - Download [v0.2.30](release/Playback-v0.2.30.tox)
 
 ---
 
-
-## :artist: colorCurves
+## :artist:
+## colorCurves
 
 colorCurves graphically adjusts per-channel color levels of a TOP using a plotted curve, similar to many image and video editing applications. Credit goes to [Vasily](https://derivative.ca/community-post/asset/color-curves) for authoring the original version of this component, to which I built onto.
 
@@ -53,18 +52,6 @@ The circle handles and curve line call additional draw functions via Render TOPs
 Finally, the `Reset` button will reset the current channel being edited.
 
 ---
-
-## :old_key: Keyframer
-
-Keyframer plays animations similar to an Animation COMP setup, but with more advanced cueing, playback and COMP integration features.
-
-### Parameters
-
-#### General
-
-* `Target COMP` - The desired COMP you wish to animate. A Geometry COMP with a `constant1` material inside is recommended. Once specified, target channels named `t[xyz]`, `r[xyz]`, `s[xyz` or `opacity` will automatically be connected via expressions.
-
-* `Target Channel Name (1-4)` - The name of each target channels. These can be any name, however channels named `t[xyz]`, `r[xyz]`, `s[xyz` or `opacity` will automatically be connected via expressions once the `Target COMP` parameter is specified. Note that only up to 4 channels can be used in each Keyframer instance. If more are required, create new Keyframer instances.
 
 #### Playback
 
@@ -124,7 +111,8 @@ Keyframer plays animations similar to an Animation COMP setup, but with more adv
 
 ---
 
-## :man_cook: Optimeister
+## :man_cook: 
+## Optimeister
 
 Optimeister cooks common CHOP outputs only when their data changes. This considerably improves performance of complex networks with many downstream CHOPs following ones that typically always cook. Supported CHOPs include: Delay, Filter, Lag, Logic, Timer, Trigger, Speed, and Slope.
 
@@ -167,7 +155,8 @@ It accepts channel inputs via custom parameters or a single wire in, which can b
 
 ---
 
-## :play_or_pause_button: Playback
+## :play_or_pause_button: 
+## Playback
 
 Playback plays, scrubs, loops and fades movies in/out in a simple geometryCOMP setup.
 
@@ -183,7 +172,8 @@ Playback plays, scrubs, loops and fades movies in/out in a simple geometryCOMP s
 
 ---
 
-## :stopwatch: Timecode
+## :stopwatch:
+## Timecode
 
 Timecode renders a TOP output of timecode (HH:MM:SS:FF) using 2D texture slicing instead of the Text TOP. This generally cooks about twice as fast as an equivalent Text TOP. It can be configured with a custom font, generate timecode from an internal timer setup, or receive a single row/column table DAT input.
 
