@@ -3,10 +3,11 @@
 ### A collection of small components that make everyday life in TouchDesigner slightly more bearable.
 #### :floppy_disk: TouchDesigner 2022.31030 (Windows)
 
-- [colorCurves.tox](#colorcurves) - Download [v2.3.2](release/colorCurves-v2.3.2.tox)
-- [Optimeister.tox](#Optimeister) - Download [v0.6.35](release/Optimeister-v0.6.35.tox)
+- [colorCurves.tox](#colorCurves) - Download [v2.3.4](release/colorCurves-v2.3.4.tox)
+- [Optimeister.tox](#Optimeister) - Download [v0.6.42](release/Optimeister-v0.6.42.tox)
 - [Timecode.tox](#timecode) - Download [v0.1.3](release/Timecode-v0.1.3.tox)
-- [Playback.tox](#Playback) - Download [v0.2.30](release/Playback-v0.2.30.tox)
+- [Playback.tox](#Playback) - Download [v0.2.37](release/Playback-v0.2.37.tox)
+- [masker.tox](#masker) - Download [v0.4.4](release/masker-v0.4.4.tox)
 
 ---
 
