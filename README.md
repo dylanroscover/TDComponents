@@ -222,4 +222,4 @@ Timecode renders a TOP output of timecode (HH:MM:SS:FF) using 2D texture slicing
 
 ## Masker
 
-## Chop Recorder
+## ChopRecorder
