@@ -1,20 +1,21 @@
 # :tophat: TDComponents
 
 ### A collection of small components that make everyday life in TouchDesigner slightly more bearable.
-#### :floppy_disk: TouchDesigner 2022.33910 (Windows)
+#### :floppy_disk: TouchDesigner 2023.11340 (Windows)
 
-- [colorCurves.tox](#colorCurves) - Download [v2.3.4](release/colorCurves-v2.3.4.tox)
-- [Optimeister.tox](#Optimeister) - Download [v0.6.52](release/Optimeister-v0.6.52.tox)
-- [Timecode.tox](#timecode) - Download [v0.1.3](release/Timecode-v0.1.3.tox)
-- [Playback.tox](#Playback) - Download [v0.2.37](release/Playback-v0.2.37.tox)
-- [masker.tox](#masker) - Download [v0.4.4](release/masker-v0.4.4.tox)
+- [color_curves.tox](#ColorCurves) - Download [v2.3.4](release/color_curves-v2.3.4.tox)
+- [optimeister.tox](#Optimeister) - Download [v0.6.52](release/optimeister-v0.6.52.tox)
+- [timecode.tox](#Timecode) - Download [v0.1.3](release/timecode-v0.1.3.tox)
+- [playback.tox](#Playback) - Download [v0.2.37](release/playback-v0.2.37.tox)
+- [masker.tox](#Masker) - Download [v0.4.4](release/masker-v0.4.4.tox)
+- [chop_recorder.tox](#ChopRecorder) - Download [v0.2.8](release/chop_recorder-v0.2.8.tox)
 
 ---
 
 ## :artist:
-## colorCurves
+## ColorCurves
 
-colorCurves graphically adjusts per-channel color levels of a TOP using a plotted curve, similar to many image and video editing applications. Credit goes to [Vasily](https://derivative.ca/community-post/asset/color-curves) for authoring the original version of this component, to which I built onto.
+ColorCurves graphically adjusts per-channel color levels of a TOP using a plotted curve, similar to many image and video editing applications. Credit goes to [Vasily](https://derivative.ca/community-post/asset/color-curves) for authoring the original version of this component, to which I built onto.
 
 <img src='https://raw.githubusercontent.com/dylanroscover/TDComponents/main/img/colorCurvesScreenshot.png' width='500'>
 
@@ -218,3 +219,7 @@ Timecode renders a TOP output of timecode (HH:MM:SS:FF) using 2D texture slicing
 * `Update Attributes` `[0]`- Updates all 2D texture slices of the numbers. Will automatically run after most parameter changes, including resolution, number size, font, and color changes. While running, all parameters are set to read only to prevent update errors. Updating the entire timecode normally takes less than 6 seconds. During this time the project is placed into non-realtime mode, and each number is given 4 frames to cook, which is typically adequate time. If it is not, or any errors/missing frames occur, try running it manually again by pulsing this parameter.
 
 `[0]` Updating/running this parameter will make all Timecode COMP parameters read-only during the update process, to prevent accidental glitches (an update process must finish cleanly before re-updating). The update process generally takes less than 6 seconds to complete.
+
+## Masker
+
+## Chop Recorder
