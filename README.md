@@ -7,7 +7,7 @@
 - [color_curves.tox](#-color-curves) - [Download v2.3.4](https://github.com/dylanroscover/TDComponents/raw/main/release/color_curves-v2.3.4.tox)
 - [comper.tox](#-comper) - [Download v2.0.6](https://github.com/dylanroscover/TDComponents/raw/main/release/comper-v2.0.6.tox)
 - [hexler.tox](#hexler) - [Download v0.1.5](https://github.com/dylanroscover/TDComponents/raw/main/release/hexler-v0.1.5.tox)
-- [optimeister.tox](#-optimeister) - [Download v0.6.52](https://github.com/dylanroscover/TDComponents/raw/main/release/optimeister-v0.6.52.tox)
+- [optimeister.tox](#-optimeister) - [Download v0.6.53](https://github.com/dylanroscover/TDComponents/raw/main/release/optimeister-v0.6.53.tox)
 - [masker.tox](#-masker) - [Download v0.4.4](https://github.com/dylanroscover/TDComponents/raw/main/release/masker-v0.4.4.tox)
 - [playback.tox](#-playback) - [Download v0.2.38](https://github.com/dylanroscover/TDComponents/raw/main/release/playback-v0.2.38.tox)
 - [step_n_repeat.tox](#-step-n-repeat) - [Download v1.0.2](https://github.com/dylanroscover/TDComponents/raw/main/release/step_n_repeat-v1.0.2.tox)
