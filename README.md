@@ -190,6 +190,9 @@ It accepts channel inputs via custom parameters or a single wire in, which can b
 
 Masker is a powerful UI-based mask creation tool for TouchDesigner, allowing you to create and manipulate complex masks with an intuitive interface.
 
+![Masker UI Screenshot](https://raw.githubusercontent.com/dylanroscover/TDComponents/main/img/masker_ui.jpg)
+
+
 ### Features
 - Multiple mask layers with individual controls
 - Real-time mask rendering and editing
