@@ -1,12 +1,12 @@
 # :tophat: TDComponents
 
 ### A collection of small components that make everyday life in TouchDesigner slightly more bearable.
-#### :floppy_disk: TouchDesigner 2023.11340 (Windows)
+#### :floppy_disk: TouchDesigner 2023.11760 (Windows)
 
 - [color_curves.tox](#ColorCurves) - Download [v2.3.4](release/color_curves-v2.3.4.tox)
 - [optimeister.tox](#Optimeister) - Download [v0.6.52](release/optimeister-v0.6.52.tox)
-- [timecode.tox](#Timecode) - Download [v0.1.3](release/timecode-v0.1.3.tox)
-- [playback.tox](#Playback) - Download [v0.2.37](release/playback-v0.2.37.tox)
+- [timecode.tox](#timecode) - Download [v0.1.5](release/timecode-v0.1.5.tox)
+- [playback.tox](#playback) - Download [v0.2.38](release/playback-v0.2.38.tox)
 - [masker.tox](#Masker) - Download [v0.4.4](release/masker-v0.4.4.tox)
 - [chop_recorder.tox](#ChopRecorder) - Download [v0.2.8](release/chop_recorder-v0.2.8.tox)
 
