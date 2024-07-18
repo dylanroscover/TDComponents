@@ -3,7 +3,7 @@
 ### A whimsical collection of components to sprinkle some joy into your TouchDesigner shenanigans.
 #### 💾 TouchDesigner 2023.11760 (Windows)
 
-- [chop_recorder.tox](#-chop-recorder) - [Download v0.2.8](https://github.com/dylanroscover/TDComponents/raw/main/release/chop_recorder-v0.2.8.tox)
+- [chop_recorder.tox](#chop-recorder) - [Download v0.2.10](https://github.com/dylanroscover/TDComponents/raw/main/release/chop_recorder-v0.2.10.tox)
 - [color_curves.tox](#-color-curves) - [Download v2.3.4](https://github.com/dylanroscover/TDComponents/raw/main/release/color_curves-v2.3.4.tox)
 - [comper.tox](#-comper) - [Download v2.0.6](https://github.com/dylanroscover/TDComponents/raw/main/release/comper-v2.0.6.tox)
 - [hexler.tox](#hexler) - [Download v0.1.5](https://github.com/dylanroscover/TDComponents/raw/main/release/hexler-v0.1.5.tox)

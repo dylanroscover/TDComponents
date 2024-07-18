@@ -16,3 +16,6 @@ dev/Backup/
 # Files to ignore
 CrashAutoSave.toe
 *.dmp
+
+# macOS
+*.DS_Store
