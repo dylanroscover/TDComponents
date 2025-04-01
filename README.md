@@ -4,7 +4,7 @@
 #### 💾 TouchDesigner 2023.11760 (Windows)
 
 - [chop_recorder.tox](#chop-recorder) - [Download v0.2.30](https://github.com/dylanroscover/TDComponents/raw/main/release/chop_recorder-v0.2.30.tox)
-- [color_curves.tox](#-color-curves) - [Download v2.3.4](https://github.com/dylanroscover/TDComponents/raw/main/release/color_curves-v2.3.4.tox)
+- [color_curves.tox](#-color-curves) - [Download v2.4.0](https://github.com/dylanroscover/TDComponents/raw/main/release/color_curves-v2.4.0.tox)
 - [comper.tox](#-comper) - [Download v2.0.6](https://github.com/dylanroscover/TDComponents/raw/main/release/comper-v2.0.6.tox)
 - [hexler.tox](#hexler) - [Download v0.1.5](https://github.com/dylanroscover/TDComponents/raw/main/release/hexler-v0.1.5.tox)
 - [optimeister.tox](#-optimeister) - [Download v0.6.53](https://github.com/dylanroscover/TDComponents/raw/main/release/optimeister-v0.6.53.tox)
