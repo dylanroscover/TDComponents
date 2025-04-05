@@ -4,7 +4,7 @@
 #### 💾 TouchDesigner 2023.11760 (Windows)
 
 - [chop_recorder.tox](#chop-recorder) - [Download v0.2.30](https://github.com/dylanroscover/TDComponents/raw/main/release/chop_recorder-v0.2.30.tox)
-- [color_curves.tox](#-color-curves) - [Download v2.4.0](https://github.com/dylanroscover/TDComponents/raw/main/release/color_curves-v2.4.0.tox)
+- [color_curves.tox](#-color-curves) - [Download v3.0.0](https://github.com/dylanroscover/TDComponents/raw/main/release/color_curves-v3.0.0.tox)
 - [comper.tox](#-comper) - [Download v2.0.6](https://github.com/dylanroscover/TDComponents/raw/main/release/comper-v2.0.6.tox)
 - [hexler.tox](#hexler) - [Download v0.1.5](https://github.com/dylanroscover/TDComponents/raw/main/release/hexler-v0.1.5.tox)
 - [optimeister.tox](#-optimeister) - [Download v0.6.53](https://github.com/dylanroscover/TDComponents/raw/main/release/optimeister-v0.6.53.tox)
@@ -76,13 +76,10 @@ Click anywhere in the curve editor (the square with the thin white diagonal line
 #### Removing Points
 Right click on any point to remove it.
 
-#### Interpolation
-Default interpolation between points is `Linear`. You can select between `Step`, `Linear`, `Ease` and `Hermite` for various curve styles. If `Hermite` is selected, the `Hermite Tension` par slider allows you to further tune your curve.
+#### Presets
+Presets may be added, edited and removed. They are externalized to a textDAT of your choice in JSON. A default setup will be created onCreate(), or you can always set a new one up by pulsing the `Init Presets` button.
 
-#### Smoothing
-In addition to interpolation, your curve can be smoothed out by increasing the `Smooth` par slider. By default it is set to `0.0` (no interpolation). This can be used in combination with any interpolation mode.
-
-#### Preview / Levels
+#### Preview / Levels (Histogram)
 By default a Preview of your TOP is shown. If you toggle the `Preview` button, it will switch to a Levels display of your current channel, which shows the total amount of values (y axis) in your adjusted TOP, drawn from dark to bright values (x-axis).
 
 #### Single / Split Views
