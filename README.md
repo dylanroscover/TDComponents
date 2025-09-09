@@ -8,7 +8,7 @@
 - [comper.tox](#-comper) - [Download v2.0.6](https://github.com/dylanroscover/TDComponents/raw/main/release/comper-v2.0.6.tox)
 - [hexler.tox](#hexler) - [Download v0.1.5](https://github.com/dylanroscover/TDComponents/raw/main/release/hexler-v0.1.5.tox)
 - [optimeister.tox](#-optimeister) - [Download v0.6.53](https://github.com/dylanroscover/TDComponents/raw/main/release/optimeister-v0.6.53.tox)
-- [masker.tox](#-masker) - [Download v0.4.4](https://github.com/dylanroscover/TDComponents/raw/main/release/masker-v0.4.4.tox)
+- [masker.tox](#-masker) - [Download v0.6.3](https://github.com/dylanroscover/TDComponents/raw/main/release/masker-v0.6.3.tox)
 - [playback.tox](#-playback) - [Download v0.2.38](https://github.com/dylanroscover/TDComponents/raw/main/release/playback-v0.2.38.tox)
 - [step_n_repeat.tox](#-step-n-repeat) - [Download v1.0.2](https://github.com/dylanroscover/TDComponents/raw/main/release/step_n_repeat-v1.0.2.tox)
 - [timecode.tox](#-timecode) - [Download v0.1.5](https://github.com/dylanroscover/TDComponents/raw/main/release/timecode-v0.1.5.tox)
@@ -191,7 +191,9 @@ Masker is a powerful UI-based mask creation tool for TouchDesigner, allowing you
 
 
 ### Features
-- Multiple mask layers with individual controls
+- Multiple mask objects with individual controls
+- Multiple surfaces
+- Per-surface presets
 - Real-time mask rendering and editing
 - Customizable UI and output settings
 - Support for curved and inverted masks
@@ -202,7 +204,7 @@ Masker is a powerful UI-based mask creation tool for TouchDesigner, allowing you
 #### Masks
 - **Active Mask**: Select the current mask to edit
 - **Mask Name**: Name your masks for easy identification
-- **Add/Remove Mask**: Create or delete mask layers
+- **Add/Remove Mask**: Create or delete mask objects
 - **Mask Color**: Set the color of the current mask
 - **Mask Opacity**: Adjust the transparency of the mask
 - **Invert Mask**: Invert the selected mask
@@ -228,7 +230,7 @@ Masker is a powerful UI-based mask creation tool for TouchDesigner, allowing you
 5. Use the "Curve Mask" option for smooth, curved edges.
 6. The final mask output can be accessed through the "Output Render Pass TOP".
 
-This powerful and flexible masking tool allows for creative and precise mask creation directly within TouchDesigner, suitable for a wide range of visual effects and compositing tasks.
+This powerful and flexible masking tool allows for creative and precise mask creation directly within TouchDesigner, suitable for a wide range of simple masking and compositing tasks.
 
 ---
 
