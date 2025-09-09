@@ -1,7 +1,7 @@
 # 🎩 TDComponents
 
 ### A whimsical collection of components to sprinkle some joy into your TouchDesigner shenanigans.
-#### 💾 TouchDesigner 2023.11760 (Windows)
+#### 💾 TouchDesigner 2023.12230 (Windows)
 
 - [chop_recorder.tox](#chop-recorder) - [Download v0.2.30](https://github.com/dylanroscover/TDComponents/raw/main/release/chop_recorder-v0.2.30.tox)
 - [color_curves.tox](#-color-curves) - [Download v3.0.0](https://github.com/dylanroscover/TDComponents/raw/main/release/color_curves-v3.0.0.tox)
