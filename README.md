@@ -1,7 +1,7 @@
 # 🎩 TDComponents
 
 ### A whimsical collection of components to sprinkle some joy into your TouchDesigner shenanigans.
-#### 💾 TouchDesigner 2023.12230 (Windows)
+#### 💾 TouchDesigner 2025.31550 (Windows)
 
 - [chop_recorder.tox](#chop-recorder) - [Download v0.2.30](https://github.com/dylanroscover/TDComponents/raw/main/release/chop_recorder-v0.2.30.tox)
 - [color_curves.tox](#-color-curves) - [Download v3.0.0](https://github.com/dylanroscover/TDComponents/raw/main/release/color_curves-v3.0.0.tox)
@@ -11,7 +11,7 @@
 - [masker.tox](#-masker) - [Download v0.6.3](https://github.com/dylanroscover/TDComponents/raw/main/release/masker-v0.6.4.tox)
 - [playback.tox](#-playback) - [Download v0.2.38](https://github.com/dylanroscover/TDComponents/raw/main/release/playback-v0.2.38.tox)
 - [step_n_repeat.tox](#-step-n-repeat) - [Download v1.0.2](https://github.com/dylanroscover/TDComponents/raw/main/release/step_n_repeat-v1.0.2.tox)
-- [timecode.tox](#-timecode) - [Download v0.1.5](https://github.com/dylanroscover/TDComponents/raw/main/release/timecode-v0.1.5.tox)
+- [timecode.tox](#-timecode) - [Download v0.1.7](https://github.com/dylanroscover/TDComponents/raw/main/release/timecode-v0.1.7.tox)
 
 ---
 
