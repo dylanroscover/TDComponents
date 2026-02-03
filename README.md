@@ -5,7 +5,7 @@
 
 - [chop_recorder.tox](#chop-recorder) - [Download v0.2.30](https://github.com/dylanroscover/TDComponents/raw/main/release/chop_recorder-v0.2.30.tox)
 - [color_curves.tox](#-color-curves) - [Download v3.0.0](https://github.com/dylanroscover/TDComponents/raw/main/release/color_curves-v3.0.0.tox)
-- [comper.tox](#-comper) - [Download v2.0.6](https://github.com/dylanroscover/TDComponents/raw/main/release/comper-v2.0.6.tox)
+- [comper.tox](#-comper) - [Download v2.1.0](https://github.com/dylanroscover/TDComponents/raw/main/release/comper-v2.1.0.tox)
 - [hexler.tox](#hexler) - [Download v0.1.5](https://github.com/dylanroscover/TDComponents/raw/main/release/hexler-v0.1.5.tox)
 - [optimeister.tox](#-optimeister) - [Download v0.6.53](https://github.com/dylanroscover/TDComponents/raw/main/release/optimeister-v0.6.53.tox)
 - [masker.tox](#-masker) - [Download v0.6.3](https://github.com/dylanroscover/TDComponents/raw/main/release/masker-v0.6.4.tox)
@@ -98,9 +98,8 @@ Comper is a texel-based composite GLSL component with position, rotation, scale,
 
 ### Features
 - Texel-based compositing using GLSL
-- Per-layer control of position, rotation, and scale
+- Per-layer control using sequence parameters
 - Alpha matte options for each layer
-- Efficient GPU-based processing
 
 ### Parameters
 
@@ -112,6 +111,7 @@ Comper is a texel-based composite GLSL component with position, rotation, scale,
 
 #### Layer Controls
 - `TOP`: Select the input TOP for each layer
+- `Crop`: Crop the input TOP for each layer
 - `Level`: Adjust the opacity of each layer
 - `Translate`: Set the X and Y translation for each layer
 - `Rotate`: Set the rotation for each layer
